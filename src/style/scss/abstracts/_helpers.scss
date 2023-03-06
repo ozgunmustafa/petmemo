@@ -336,14 +336,7 @@ hr {
       padding-block: #{$i}rem;
     }
   }
-  @for $i from 1 through 50 {
-    .fs-lg-#{$i} {
-      font-size: #{$i}px !important;
-    }
-  }
-  .fs-lg-64 {
-    font-size: 64px;
-  }
+ 
 
   .w-lg-25 {
     width: 25% !important;
