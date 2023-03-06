@@ -8,11 +8,20 @@ import { createPetCall, getPetById } from '../features/pet/petActions';
 import { createPetValidation } from '../helpers/formSchemas/createPetSchema';
 import { BsFillTrashFill } from 'react-icons/bs';
 import { FiEdit } from 'react-icons/fi';
-import { setCollection } from '../features/pet/petSlice';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
-  const dispatch = useDispatch();
+  const { userInfo } = useSelector((state) => state.auth);
   const { data, loading, error } = useSelector((state) => state.pet);
+
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    if (!userInfo) {
+      navigate('/login');
+    }
+  }, [userInfo]);
 
   useEffect(() => {
     console.log(pets);
