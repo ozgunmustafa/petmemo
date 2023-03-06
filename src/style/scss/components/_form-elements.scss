@@ -1,0 +1,21 @@
+.form-input {
+  outline: none;
+  min-height: 44px;
+  border: none;
+  padding: 0.5rem 0.75rem;
+  width: 100%;
+  border-radius: 0.45rem;
+  border: 1px solid var(--gray-400);
+  transition: 0.2s;
+  &:focus {
+    box-shadow: 0 0 0 0.25rem rgb(211 212 213 / 50%);
+  }
+  &::placeholder {
+    font-size: 0.85rem;
+  }
+}
+
+.form-error-message {
+  font-size: 0.85rem;
+  color: var(--red);
+}

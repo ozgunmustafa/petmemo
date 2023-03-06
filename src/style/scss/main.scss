@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/helpers';
+
+// Vendors and external stylesheets
+
+// Base stuff
+//@import 'base/bootstrap';
+
+@import 'base/normalize';
+//@import 'base/fonts';
+//@import 'base/icon-fonts';
+@import 'base/typography';
+
+// Layout related stylesheets
+//@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/sidebar';
+
+// Components and modules
+@import 'components/buttons';
+@import 'components/form-elements';
+@import 'components/modal';
+
+// Page-specific stylesheets
+@import 'pages/home';
+@import 'pages/login';
