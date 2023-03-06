@@ -28,6 +28,9 @@
 .d-block {
   display: block;
 }
+.d-none {
+  display: none;
+}
 
 .flex {
   display: flex;
@@ -316,6 +319,11 @@ hr {
 }
 
 @include min-lg {
+  .flex {
+    &-lg {
+      display: flex;
+    }
+  }
   .backdrop-blur-lg {
     background-color: hsl(var(--main-text-color), 0.05);
     // backdrop-filter: blur(11px);

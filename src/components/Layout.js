@@ -8,12 +8,18 @@ const Layout = ({ children }) => {
       <header className="main-header">
         <div className="container">
           <ul className="main-nav">
-            <li className="mr-30">
-              <Link to="/" className="d-block">
+            <li className="mr-15">
+              <Link to="/" className="flex items-center">
                 <img
-                  src={`${process.env.PUBLIC_URL + '/img/logo.svg'}`}
-                  width="110"
+                  src={`${process.env.PUBLIC_URL + '/img/logo-shape.svg'}`}
+                  width="50"
                   className=""
+                  alt=""
+                />
+                <img
+                  src={`${process.env.PUBLIC_URL + '/img/logo-text.svg'}`}
+                  width="90"
+                  className="d-none flex-lg"
                   alt=""
                 />
               </Link>
@@ -42,7 +48,7 @@ const Layout = ({ children }) => {
         </div>
       </header>
       <main>{children}</main>
-      <footer className='py-15'>
+      <footer className="py-15">
         <div className="text-center">Copyright</div>
       </footer>
     </>
