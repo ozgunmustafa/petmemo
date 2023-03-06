@@ -16,8 +16,5 @@ You may also see any lint errors in the console.
 
 ### `Visit Demo`
 
-Runs the app in the development mode.\
+View for demo;
 Open [https://petmemo-ozgunmustafa.vercel.app/](https://petmemo-ozgunmustafa.vercel.app/) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
